@@ -42,7 +42,9 @@ main.on('click', 'up', function(e) {
   req.send(null);
 	
   
-  var card = new UI.Card();
+  var card = new UI.Card({
+    scrollable: true
+  });
   //card.title('A Card');
   //card.subtitle('Is a Window');
   //card.body('The simplest window type in Pebble.js.');
@@ -76,10 +78,13 @@ main.on('click', 'select', function(e) {
   req.send(null);
 	
   
-  var card = new UI.Card();
+  var card = new UI.Card({
+    scrollable: true
+  });
   //card.title('A Card');
   //card.subtitle('Is a Window');
   //card.body('The simplest window type in Pebble.js.');
+  
   card.show();
 });
 
@@ -110,7 +115,9 @@ main.on('click', 'down', function(e) {
   req.send(null);
 	
   
-  var card = new UI.Card();
+  var card = new UI.Card({
+    scrollable: true
+  });
   //card.title('A Card');
   //card.subtitle('Is a Window');
   //card.body('The simplest window type in Pebble.js.');
